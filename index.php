@@ -25,6 +25,84 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2E4A7F, #0A0A0A);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+        
+            
+        }
+
+        .login-card {
+            width: 280px;
+            padding: 35px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .login-card h2 {
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /*/.form-label {
+            color: #d9e2ff;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.35);
+            color: #fff;
+        }
+
+        .form-control::placeholder {
+            color: #bbbbbb;
+        }
+
+        /*.form-control:focus {
+            background: rgba(255,255,255,0.18);
+            border-color: #4a6bb8;
+            box-shadow: 0 0 6px #4a6bb8;
+            color: #fff;
+        }*/
+
+        .btn-primary {
+            background-color: #2E4A7F;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #1f3359;
+        }
+
+        a {
+            color: #9ab4ff;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #c9d6ff;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
 </head>
 <body class="bg-light">
 <div class="container mt-5">

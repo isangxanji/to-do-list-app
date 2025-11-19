@@ -20,61 +20,61 @@ $overdue_count = $overdue->fetchColumn();
 <html><head><title>Dashboard</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Body and container */
+        /* Body with gradient */
         body {
-            background-color: #e0e0e0; /* light gray */
+            background: #fff;
+            min-height: 100vh;
             font-family: "Poppins", sans-serif;
+            color: #ffffff;
         }
 
+        /* Container */
         .container {
             margin-top: 3rem;
         }
 
-        /* Cards */
+        /* Cards (glassmorphic style) */
         .card {
-            border-radius: 1rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
             transition: all 0.3s ease;
         }
 
         .card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.7);
         }
 
-        /* Gray variants for cards */
-        .card.bg-warning {
-            background-color: #b0b0b0; /* medium gray */
+        /* Card headings */
+        .card h5 {
+            color: #d9e2ff;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
         }
 
-        .card.bg-danger {
-            background-color: #7a7a7a; /* darker gray */
-        }
-
-        .card.text-white h5,
-        .card.text-white h2 {
+        .card h2 {
             color: #ffffff;
-        }
-
-        /* Headings */
-        h2 {
-            color: #333333; /* dark gray */
+            font-weight: 700;
         }
 
         /* Button */
         .btn-primary {
-            background-color: #7a7a7a;
+            background-color: #5f94f6ff;
             border: none;
+            font-weight: 600;
             transition: all 0.2s ease-in-out;
         }
 
         .btn-primary:hover {
-            background-color: #5a5a5a;
+            background-color: #1f3359;
         }
 
-        /* Optional spacing for button container */
-        .mt-4 {
-            margin-top: 1.5rem !important;
+        /* Dashboard heading */
+        h2.dashboard-title {
+            margin-bottom: 2rem;
+            text-shadow: 0 0 8px rgba(46, 74, 127, 0.6);
         }
     </style>
 </head><body>

@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #2A4E7F, #0A0A0A);">
+    <div class="container-fluid">>
     <div class="container-fluid">
-        <a class="navbar-brand" href="dashboard.php"><strong>TODO App</strong></a>
+        <a class="navbar-brand" href="dashboard.php" style="font-size: 1.8rem; text-shadow: 0 0 6px rgba(46, 78, 127, 0.8);" ><strong>TODO App</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
